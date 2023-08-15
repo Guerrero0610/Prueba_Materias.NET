@@ -5,6 +5,10 @@
       "PackagePath": "staticwebassets\\BD_Materias.bundle.scp.css"
     },
     {
+      "Id": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\css\\HojaEstilo.css",
+      "PackagePath": "staticwebassets\\css\\HojaEstilo.css"
+    },
+    {
       "Id": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },

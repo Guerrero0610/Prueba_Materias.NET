@@ -2,13 +2,13 @@
 
 
 body {
-    background-color:#ff0000;
+    background-color:#ffffff;
 }
 
 
-.btn{
+.btn btn-success btn-sm{
     /*¨Color de fondo del boton*/
-    background-color:none;
+    background-color: none;
     /*Medidas son: arriba-derecha-abajo-izquierda // tipo de borde // y color*/
-    border:1px 1px 0px 1px solid #000000;
+    border: 1px 1px 0px 1px solid #000000;
 }

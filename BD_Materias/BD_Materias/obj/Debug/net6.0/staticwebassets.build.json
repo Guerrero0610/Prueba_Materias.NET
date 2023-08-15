@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "m0lj/DenNeg9d30RM8IZgJDcK+hDxNliBKgwf+NP9pU=",
+  "Hash": "OtYBmz2w0jgt2+Qf0y6iFX6qjtxfszIxKbd9EgSh/IQ=",
   "Source": "BD_Materias",
   "BasePath": "_content/BD_Materias",
   "Mode": "Default",
@@ -49,6 +49,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\BD_Materias.bundle.scp.css"
+    },
+    {
+      "Identity": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\css\\HojaEstilo.css",
+      "SourceId": "BD_Materias",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\",
+      "BasePath": "_content/BD_Materias",
+      "RelativePath": "css/HojaEstilo.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\HojaEstilo.css"
     },
     {
       "Identity": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\css\\site.css",
