@@ -1,7 +1,16 @@
+using BD_Materias.Models;
+using Microsoft.EntityFrameworkCore;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+
+// Se estable la conexion con la base de datos
+
+builder.Services.AddDbContext<BdmateriasContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("cadenaSQL"))
+);
 
 var app = builder.Build();
 

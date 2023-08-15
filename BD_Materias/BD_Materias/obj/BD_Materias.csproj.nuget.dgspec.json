@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\SGVillarreal\\source\\repos\\BD_Materias\\BD_Materias\\BD_Materias.csproj": {}
+    "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\BD_Materias.csproj": {}
   },
   "projects": {
-    "C:\\Users\\SGVillarreal\\source\\repos\\BD_Materias\\BD_Materias\\BD_Materias.csproj": {
+    "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\BD_Materias.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\SGVillarreal\\source\\repos\\BD_Materias\\BD_Materias\\BD_Materias.csproj",
+        "projectUniqueName": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\BD_Materias.csproj",
         "projectName": "BD_Materias",
-        "projectPath": "C:\\Users\\SGVillarreal\\source\\repos\\BD_Materias\\BD_Materias\\BD_Materias.csproj",
+        "projectPath": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\BD_Materias.csproj",
         "packagesPath": "C:\\Users\\SGVillarreal\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\SGVillarreal\\source\\repos\\BD_Materias\\BD_Materias\\obj\\",
+        "outputPath": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

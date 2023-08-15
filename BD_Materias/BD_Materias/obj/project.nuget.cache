@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "oy5v581PssoYUyeC0msTmxXiciIk+wPWgGQ/RBGrHALwNhr+dYCCAgYGofw/osWYze7duRoZZrMuPWwNUmeOBA==",
+  "dgSpecHash": "42LYW+rMsmNEROi5CLet//a7WxJPABXUlcDoHsA062ECbM/heEaL1R7IWnPZnPtYKyj4NW/GJYPmRLVQgYnkOg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\SGVillarreal\\source\\repos\\BD_Materias\\BD_Materias\\BD_Materias.csproj",
+  "projectFilePath": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\BD_Materias.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SGVillarreal\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\SGVillarreal\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
