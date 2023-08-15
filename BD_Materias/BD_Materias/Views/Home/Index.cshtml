@@ -16,15 +16,21 @@
     </div>
     <div class="card-body">
 
-        <form asp-controller="Home" asp-action="Index">
-            <p>
-                Buscar: <input type="text" name="Buscar" id="txtBuscar" class="form-text" />
-                <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
-                <button type="button" class="btn btn-sm btn-secondary" id="btnMostrarTodo">Mostrar Todo</button>
-            </p>
-            <a class="btn btn-success btn-sm" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="0"> Matricular Estudiante </a>
-            <a class="btn btn-success btn-sm" asp-action="Ver_Proyectos" asp-controller="Home" asp-route-idPersonaInt="0"> Ver Profesores Disponibles </a>
-        </form>
+        <div class="row"> <!--Para dividir las filas en dos columnas -->
+            <div class="col-md-6">
+                <form asp-controller="Home" asp-action="Index">
+                    <div class="input-group">
+                        <input type="text" name="Buscar" id="txtBuscar" class="form-control" placeholder="Buscar" />
+                        <button type="submit" class="btn btn-dark">Buscar</button>
+                        <button type="button" class="btn btn-secondary" id="btnMostrarTodo">Mostrar Todo</button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-6">
+                <a class="btn btn-outline-success" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="0">Matricular Estudiante</a>
+                <a class="btn btn-outline-success" asp-action="Ver_Proyectos" asp-controller="Home" asp-route-idPersonaInt="0">Ver Profesores Disponibles</a>
+            </div>
+        </div>
 
         <script>
             document.getElementById("btnMostrarTodo").addEventListener("click", function () {
@@ -62,8 +68,8 @@
                         <td>@item.Genero</td>
                         <td>@item.FechaInscripcion</td>
                         <td>
-                            <a class="btn btn-primary btn-sm" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Editar </a>
-                            <a class="btn btn-danger btn-sm" asp-action="Eliminar" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Eliminar </a>
+                            <a class="btn btn-outline-info" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Editar </a>
+                            <a class="btn btn-outline-danger" asp-action="Eliminar" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Eliminar </a>
                         </td>
                     </tr>
                 }
