@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\BD_Materias.props" />
+</Project>
