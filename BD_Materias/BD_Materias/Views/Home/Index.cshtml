@@ -1,8 +1,72 @@
-﻿@{
+﻿@model List<BD_Materias.Models.Estudiante>
+
+@{
     ViewData["Title"] = "Home Page";
 }
 
 <div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    <h1 class="display-4">ASIGNACIÓN MATERIAS</h1>
+</div>
+
+<div class="card">
+    <div class="card-header">
+        <h5>Lista de Estudiantes Matriculados</h5>
+    </div>
+    <div class="card-body">
+
+        <form asp-controller="Home" asp-action="Index">
+            <p>
+                Buscar: <input type="text" name="Buscar" id="txtBuscar" class="form-text" />
+                <input type="submit" value="Buscar" class="btn btn-sm btn-dark" />
+                <button type="button" class="btn btn-sm btn-secondary" id="btnMostrarTodo">Mostrar Todo</button>
+            </p>
+            <a class="btn btn-success btn-sm" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="0">Nuevo</a>
+            <a class="btn btn-success btn-sm" asp-action="Ver_Proyectos" asp-controller="Home" asp-route-idPersonaInt="0">Ver Proyectos Disponibles</a>
+        </form>
+
+        <script>
+            document.getElementById("btnMostrarTodo").addEventListener("click", function () {
+                window.location.href = '/Home/Index';
+            });
+        </script>
+
+        <hr />
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Correo Electrónico</th>
+                    <th>Número de Teléfono</th>
+                    <th>Dirección</th>
+                    <th>Género</th>
+                    <th>Fecha de Matricula</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Id</td>
+                        <td>@item.Nombre</td>
+                        <td>@item.Apellido</td>
+                        <td>@item.Edad</td>
+                        <td>@item.CorreoElectronico</td>
+                        <td>@item.Telefono</td>
+                        <td>@item.Direccion</td>
+                        <td>@item.Genero</td>
+                        <td>@item.FechaInscripcion</td>
+                        <td>
+                            <a class="btn btn-primary btn-sm" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Editar </a>
+                            <a class="btn btn-danger btn-sm" asp-action="Eliminar" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Eliminar </a>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+
+    </div>
 </div>
