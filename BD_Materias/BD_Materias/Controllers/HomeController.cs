@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using BD_Materias.Models;
+using BD_Materias.Models.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 
@@ -25,6 +26,47 @@ namespace BD_Materias.Controllers
             }
 
             return View(EstudianteInte);
+        }
+
+        [HttpGet]
+        public IActionResult PersonaInteDetalle(int idPersonaInt)
+        {
+            EstudianteVM oEstudianteVM = new EstudianteVM()
+            {
+                oEstudiante = new EstudianteVM(),
+                oRegistroMateria = _BDContext.RegistroMaterias.Select(Materias => new SelectListItem()
+                {
+                    Text = Materias.Id.ToString(),
+                    Value = Materias.Id.ToString()
+
+                }).ToList()
+
+            };
+
+            if (idPersonaInt != 0)
+            {
+                oEstudianteVM.oEstudiante = _BDContext.Estudiantes.Find(idPersonaInt);
+            }
+
+
+            return View(oEstudianteVM);
+        }
+
+        [HttpPost]
+        public IActionResult PersonaInteDetalle(ClienteVM oPersonaVM)
+        {
+            if (oPersonaVM.oPersona.Id == 0)
+            {
+                _DBContext.PersonasInteresadas.Add(oPersonaVM.oPersona);
+            }
+            else
+            {
+                _DBContext.PersonasInteresadas.Update(oPersonaVM.oPersona);
+            }
+
+            _DBContext.SaveChanges();
+
+            return RedirectToAction("Index", "Home");
         }
 
     }

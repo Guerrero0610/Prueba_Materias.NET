@@ -18,11 +18,11 @@ body {
 }
 
 h5{
-    text-align:center;
+    text-align:center;/*Posicion Texto*/
 }
 
 h1 {
-    font-family: 'Sans Serif Collection';
+    font-family: 'Sans Serif Collection';/*Tipo Letra*/
     
 }
 
@@ -42,7 +42,7 @@ h1 {
 
     .styled-table th, .styled-table td {
         padding: 8px;
-        text-align: left;
+        text-align: center;
         border-bottom: 1px solid #ddd; /* Encabezado */
     }
 
