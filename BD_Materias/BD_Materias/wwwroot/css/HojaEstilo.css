@@ -64,3 +64,20 @@ h1 {
     .styled-table th:first-child, .styled-table td:first-child {
         font-weight: bold;
     }
+
+
+.card{
+    padding:20px;
+
+}
+
+.row{
+    justify-content:center;
+
+
+}
+
+h2 {
+    text-align: center;
+    font-family: 'Sans Serif Collection'; /*Tipo Letra*/
+}
