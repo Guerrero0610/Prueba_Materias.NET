@@ -33,7 +33,7 @@ namespace BD_Materias.Controllers
         {
             EstudianteVM oEstudianteVM = new EstudianteVM()
             {
-                oEstudiante = new EstudianteVM(),
+                oEstudiante = new Estudiante(),
                 oRegistroMateria = _BDContext.RegistroMaterias.Select(Materias => new SelectListItem()
                 {
                     Text = Materias.Id.ToString(),
@@ -48,26 +48,26 @@ namespace BD_Materias.Controllers
                 oEstudianteVM.oEstudiante = _BDContext.Estudiantes.Find(idPersonaInt);
             }
 
-
             return View(oEstudianteVM);
         }
 
         [HttpPost]
-        public IActionResult PersonaInteDetalle(ClienteVM oPersonaVM)
+        public IActionResult PersonaInteDetalle(EstudianteVM oEstudianteVM)
         {
-            if (oPersonaVM.oPersona.Id == 0)
+            if (oEstudianteVM.oEstudiante.Id == 0)
             {
-                _DBContext.PersonasInteresadas.Add(oPersonaVM.oPersona);
+                _BDContext.Estudiantes.Add(oEstudianteVM.oEstudiante);
             }
             else
             {
-                _DBContext.PersonasInteresadas.Update(oPersonaVM.oPersona);
+                _BDContext.Estudiantes.Update(oEstudianteVM.oEstudiante);
             }
 
-            _DBContext.SaveChanges();
+            _BDContext.SaveChanges();
 
             return RedirectToAction("Index", "Home");
         }
+
 
     }
 }
