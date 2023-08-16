@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "OtYBmz2w0jgt2+Qf0y6iFX6qjtxfszIxKbd9EgSh/IQ=",
+  "Hash": "ZAyoUsg4GV8G8chVZxb8jJEgiDyC9uFKAD82q+/VXH0=",
   "Source": "BD_Materias",
   "BasePath": "_content/BD_Materias",
   "Mode": "Default",
@@ -100,6 +100,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
+    },
+    {
+      "Identity": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\Images\\imagen_fondo.png",
+      "SourceId": "BD_Materias",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\",
+      "BasePath": "_content/BD_Materias",
+      "RelativePath": "Images/imagen_fondo.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\Images\\imagen_fondo.png"
     },
     {
       "Identity": "C:\\Users\\SGVillarreal\\Documents\\GitHub\\Prueba_Materias.NET\\BD_Materias\\BD_Materias\\wwwroot\\js\\site.js",
