@@ -1,8 +1,85 @@
-﻿
+﻿@model BD_Materias.Models.ViewModels.EstudianteVM
 @{
     ViewData["Title"] = "PersonaInteDetalle";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h1>PersonaInteDetalle</h1>
+
+@if (Model.oEstudiante.Id == 0)
+{
+    <h1>Crear Estudiante a Matricular</h1>
+}
+else
+{
+    <h1>Editar Estudiante Matriculado</h1>
+}
+
+<div class="row">
+    <div class="col-sm-4">
+
+        <form asp-action="PersonaInteDetalle" asp-controller="Home" method="post">
+            <input type="hidden" asp-for="oEstudiante.Id" />
+
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="oEstudiante.Nombre">Nombre Completo</label>
+                <input class="form-control form-control-sm" asp-for="oEstudiante.Nombre" type="text" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="oEstudiante.Apellido">Apellido Completo</label>
+                <input class="form-control form-control-sm" asp-for="oEstudiante.Apellido" type="text" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="oEstudiante.Edad">Edad</label>
+                <input class="form-control form-control-sm" asp-for="oEstudiante.Edad" type="text" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="oEstudiante.CorreoElectronico">Correo Electrónico</label>
+                <input class="form-control form-control-sm" asp-for="oEstudiante.CorreoElectronico" type="text" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="oEstudiante.Telefono">Numero de Telefono</label>
+                <input class="form-control form-control-sm" asp-for="oEstudiante.Telefono" type="text" />
+            </div>
+
+            <div class="mb-2">
+                <label class="form-label" asp-for="oEstudiante.Direccion">Dirección Completa</label>
+                <input class="form-control form-control-sm" asp-for="oEstudiante.Direccion" type="text" />
+            </div>
+
+            <div class="mb-3">
+                <label class="form-label" asp-for="oEstudiante.Genero">Seleccione su Genero</label>
+                <select class="form-select form-select-sm" asp-for="oEstudiante.Genero" asp-items="@Model.oGenero">
+                    <option selected disabled>-- Seleccionar --</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="oEstudiante.FechaInscripcion">Fecha de Inscripción a Matricula:</label>
+                <input asp-for="oEstudiante.FechaInscripcion" class="form-control" />
+                <span asp-validation-for="oEstudiante.FechaInscripcion" class="text-danger"></span>
+            </div>
+            <hr />
+            <div class="mb-2">
+
+                @if (Model.oEstudiante.Id == 0)
+                {
+                    <button class="btn btn-outline-success" type="submit"> Crear </button>
+                }
+                else
+                {
+                    <button class="btn btn-outline-primary" type="submit"> Actualizar </button>
+                }
+
+                <a class="btn btn-outline-dark" asp-action="Index" asp-controller="Home"> Volver </a>
+            </div>
+
+        </form>
+
+    </div>
+</div>
 

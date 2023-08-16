@@ -34,18 +34,22 @@ namespace BD_Materias.Controllers
             EstudianteVM oEstudianteVM = new EstudianteVM()
             {
                 oEstudiante = new Estudiante(),
-                oRegistroMateria = _BDContext.RegistroMaterias.Select(Materias => new SelectListItem()
-                {
-                    Text = Materias.Id.ToString(),
-                    Value = Materias.Id.ToString()
-
-                }).ToList()
-
+                oGenero = new List<SelectListItem>()
+        {
+            new SelectListItem { Text = "Masculino", Value = "Masculino" },
+            new SelectListItem { Text = "Femenino", Value = "Femenino" }
+        }
             };
 
             if (idPersonaInt != 0)
             {
-                oEstudianteVM.oEstudiante = _BDContext.Estudiantes.Find(idPersonaInt);
+                Estudiante estudiante = _BDContext.Estudiantes.Find(idPersonaInt);
+
+                if (estudiante != null)
+                {
+                    oEstudianteVM.oEstudiante = estudiante;
+                    oEstudianteVM.GeneroSeleccionado = estudiante.Genero; // Asignar el género del estudiante
+                }
             }
 
             return View(oEstudianteVM);

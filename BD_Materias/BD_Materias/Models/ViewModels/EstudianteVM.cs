@@ -6,6 +6,8 @@ namespace BD_Materias.Models.ViewModels
     {
         public Estudiante oEstudiante { get; set; }
 
-        public List<SelectListItem> oRegistroMateria{ get; set;}
+        public List<SelectListItem> oGenero{ get; set;}
+
+        public string GeneroSeleccionado { get; set; }
     }
 }
