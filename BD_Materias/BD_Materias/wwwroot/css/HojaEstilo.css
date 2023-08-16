@@ -32,3 +32,35 @@ h1 {
     left:calc(30% - 50px)
 }
 
+/* Estilos para la tabla */
+.styled-table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ddd;
+    font-size: 14px;
+}
+
+    .styled-table th, .styled-table td {
+        padding: 8px;
+        text-align: left;
+        border-bottom: 1px solid #ddd; /* Encabezado */
+    }
+
+    .styled-table th {
+        background-color: #f2f2f2;
+        font-weight: bold;
+        border-bottom: 2px solid #ddd;
+    }
+
+    .styled-table tbody tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .styled-table tbody tr:hover {
+        background-color: #ddd;
+    }
+
+    /* Estilos para la primera columna */
+    .styled-table th:first-child, .styled-table td:first-child {
+        font-weight: bold;
+    }
