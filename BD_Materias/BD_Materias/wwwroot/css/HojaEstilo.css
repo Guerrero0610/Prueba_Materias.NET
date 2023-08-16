@@ -2,7 +2,9 @@
 
 
 body {
-    background-color:#ffffff;
+    background-image: url('~/Images/imagen_fondo.png');
+    background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
 }
 
 
@@ -13,3 +15,13 @@ body {
     border: 2px solid #ff9900; /* Cambia el borde */
     /* Agrega más estilos según tus preferencias */
 }
+
+h5{
+    text-align:center;
+}
+
+h1 {
+    font-family: 'Sans Serif Collection';
+    
+}
+

@@ -68,8 +68,10 @@
                         <td>@item.Genero</td>
                         <td>@item.FechaInscripcion</td>
                         <td>
-                            <a class="btn btn-outline-info" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Editar </a>
-                            <a class="btn btn-outline-danger" asp-action="Eliminar" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Eliminar </a>
+                           
+                          <a class="btn btn-outline-info" asp-action="PersonaInteDetalle" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Editar </a>
+                          <a class="btn btn-outline-danger" asp-action="Eliminar" asp-controller="Home" asp-route-idPersonaInt="@item.Id"> Eliminar </a>
+
                         </td>
                     </tr>
                 }
