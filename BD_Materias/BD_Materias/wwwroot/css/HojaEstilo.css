@@ -5,7 +5,7 @@ body {
     background-image: url('../Images/imagen_fondo.png');
     background-size: cover; /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    
+    position:relative;
 }
 
 
@@ -24,5 +24,11 @@ h5{
 h1 {
     font-family: 'Sans Serif Collection';
     
+}
+
+.fixed-footer {
+    position: absolute;
+    bottom: 0;
+    left:calc(30% - 50px)
 }
 
